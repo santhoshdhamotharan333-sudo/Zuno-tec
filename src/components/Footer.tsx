@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-text-secondary">
+    <footer className="bg-primary-dark text-text-light">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -31,8 +31,8 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-bold text-accent">GraphicDesignEye</h3>
-            <p className="text-sm leading-relaxed">
+            <h3 className="text-2xl font-bold font-playfair text-gold">GraphicDesignEye</h3>
+            <p className="text-base leading-relaxed text-text-secondary font-montserrat">
               Premium design and development services that bring your vision to life with cutting-edge technology and creative expertise.
             </p>
             <div className="flex space-x-4">
@@ -42,7 +42,7 @@ const Footer = () => {
                   <a
                     key={social.label}
                     href={social.url}
-                    className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center hover:bg-accent hover:text-primary transition-all duration-300 group"
+                    className="w-12 h-12 bg-gold/10 rounded-full flex items-center justify-center hover:bg-gold hover:text-primary-dark transition-all duration-300 group border border-gold/20"
                     aria-label={social.label}
                   >
                     <Icon size={18} className="group-hover:scale-110 transition-transform duration-300" />
@@ -59,13 +59,13 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-bold text-text-primary">Services</h3>
+            <h3 className="text-xl font-bold font-playfair text-text-light">Services</h3>
             <ul className="space-y-2">
               {serviceLinks.map((service) => (
                 <li key={service.name}>
                   <Link
                     to={service.path}
-                    className="text-sm hover:text-accent transition-colors duration-300 hover:translate-x-1 inline-block"
+                    className="text-base hover:text-gold transition-colors duration-300 hover:translate-x-1 inline-block font-montserrat text-text-secondary"
                   >
                     {service.name}
                   </Link>
@@ -81,12 +81,12 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-bold text-text-primary">Quick Links</h3>
+            <h3 className="text-xl font-bold font-playfair text-text-light">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-sm hover:text-accent transition-colors duration-300">Home</Link></li>
-              <li><Link to="/portfolio" className="text-sm hover:text-accent transition-colors duration-300">Portfolio</Link></li>
-              <li><Link to="/blog" className="text-sm hover:text-accent transition-colors duration-300">Blog</Link></li>
-              <li><Link to="/contact" className="text-sm hover:text-accent transition-colors duration-300">Contact</Link></li>
+              <li><Link to="/" className="text-base hover:text-gold transition-colors duration-300 font-montserrat text-text-secondary">Home</Link></li>
+              <li><Link to="/portfolio" className="text-base hover:text-gold transition-colors duration-300 font-montserrat text-text-secondary">Portfolio</Link></li>
+              <li><Link to="/blog" className="text-base hover:text-gold transition-colors duration-300 font-montserrat text-text-secondary">Blog</Link></li>
+              <li><Link to="/contact" className="text-base hover:text-gold transition-colors duration-300 font-montserrat text-text-secondary">Contact</Link></li>
             </ul>
           </motion.div>
 
@@ -97,19 +97,19 @@ const Footer = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="space-y-4"
           >
-            <h3 className="text-xl font-bold text-text-primary">Contact</h3>
+            <h3 className="text-xl font-bold font-playfair text-text-light">Contact</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-accent" />
-                <span className="text-sm">contact@graphicdesigneye.com</span>
+                <Mail size={18} className="text-gold" />
+                <span className="text-base font-montserrat text-text-secondary">contact@graphicdesigneye.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone size={16} className="text-accent" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <Phone size={18} className="text-gold" />
+                <span className="text-base font-montserrat text-text-secondary">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin size={16} className="text-accent" />
-                <span className="text-sm">123 Design St, Creative City</span>
+                <MapPin size={18} className="text-gold" />
+                <span className="text-base font-montserrat text-text-secondary">123 Design St, Creative City</span>
               </div>
             </div>
           </motion.div>
@@ -119,9 +119,9 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="border-t border-gray-800 mt-8 pt-6 text-center"
+          className="border-t border-gold/20 mt-12 pt-8 text-center"
         >
-          <p className="text-sm">&copy; 2025 GraphicDesignEye. All rights reserved.</p>
+          <p className="text-base font-montserrat text-text-secondary">&copy; 2025 GraphicDesignEye. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>
