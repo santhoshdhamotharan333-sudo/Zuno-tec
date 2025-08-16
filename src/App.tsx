@@ -16,7 +16,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-primary text-text-primary font-montserrat overflow-x-hidden">
+      <div className="min-h-screen bg-primary text-text-primary font-sans overflow-x-hidden">
         <Header />
         <Routes>
           <Route path="/" element={<Homepage />} />

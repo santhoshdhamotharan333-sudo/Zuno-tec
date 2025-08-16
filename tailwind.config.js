@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
-        'montserrat': ['Montserrat', 'sans-serif'],
+        'sans': ['Montserrat', 'sans-serif'],
       },
       colors: {
         'primary': '#F2E9DC', // Warm Beige background
